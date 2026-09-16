@@ -49,7 +49,7 @@ Role: {role}
 
     response = client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama-3.1-8b-instant",
+        model="openai/gpt-oss-20b",
     )
 
     raw_text = response.choices[0].message.content
